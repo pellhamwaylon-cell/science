@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>8th Grade Science Expansion</title>
+
+
+<style>
+
+body {
+
+font-family:Arial,sans-serif;
+background:#f3e5f5;
+padding:20px;
+
+}
+
+
+.container {
+
+max-width:1100px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:20px;
+
+}
+
+
+header {
+
+background:#6a1b9a;
+color:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+
+}
+
+
+.grid {
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+margin-top:30px;
+
+}
+
+
+.card {
+
+background:#fce4ec;
+padding:20px;
+border-radius:15px;
+
+}
+
+
+button {
+
+background:#6a1b9a;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+
+button:hover {
+
+background:#4a148c;
+
+}
+
+
+.progress {
+
+height:30px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+
+}
+
+
+.bar {
+
+height:100%;
+width:0%;
+background:#43a047;
+color:white;
+text-align:center;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<header>
+
+<h1>
+🚀 8th Grade Science Expansion Pack
+</h1>
+
+<p>
+Advanced science topics for your next year.
+</p>
+
+</header>
+
+
+
+
+
+<h2>
+📚 8th Grade Units
+</h2>
+
+
+
+
+<div class="grid">
+
+
+
+<div class="card">
+
+<h2>
+⚛ Chemistry
+</h2>
+
+<p>
+Atoms, elements, compounds, reactions, acids, bases, and the periodic table.
+</p>
+
+
+<a href="science_study_file_18_chemistry.html">
+
+<button>
+Open Unit
+</button>
+
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2>
+⚡ Physics
+</h2>
+
+<p>
+Forces, motion, energy, electricity, and waves.
+</p>
+
+
+<a href="science_study_file_19_physics.html">
+
+<button>
+Open Unit
+</button>
+
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2>
+🧬 Genetics & Evolution
+</h2>
+
+<p>
+DNA, heredity, mutations, and natural selection.
+</p>
+
+
+<a href="science_study_file_20_genetics.html">
+
+<button>
+Open Unit
+</button>
+
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2>
+🌌 Space Science
+</h2>
+
+<p>
+Stars, planets, gravity, galaxies, and the universe.
+</p>
+
+
+<a href="science_study_file_21_space_science.html">
+
+<button>
+Open Unit
+</button>
+
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2>
+🌎 Earth Systems
+</h2>
+
+<p>
+Climate, weather, oceans, and natural disasters.
+</p>
+
+
+<a href="science_study_file_22_earth_systems.html">
+
+<button>
+Open Unit
+</button>
+
+</a>
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+<h2>
+🧪 Advanced Labs
+</h2>
+
+<p>
+8th grade experiments and scientific analysis.
+</p>
+
+
+<a href="science_study_file_23_advanced_labs.html">
+
+<button>
+Open Unit
+</button>
+
+</a>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<h2>
+📈 Expansion Progress
+</h2>
+
+
+<div class="progress">
+
+<div class="bar" id="bar">
+
+0%
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<button onclick="completeUnit()">
+
+Complete Unit
+
+</button>
+
+
+
+
+
+<h2>
+🎯 8th Grade Goals
+</h2>
+
+
+<ul>
+
+<li>☐ Master chemistry basics</li>
+
+<li>☐ Understand forces and energy</li>
+
+<li>☐ Learn genetics</li>
+
+<li>☐ Understand Earth systems</li>
+
+<li>☐ Study space science</li>
+
+<li>☐ Complete advanced labs</li>
+
+</ul>
+
+
+
+
+
+<br>
+
+
+<a href="index.html">
+
+<button>
+⬅ Back to Main Science Hub
+</button>
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+let progress=0;
+
+
+
+function completeUnit(){
+
+
+if(progress<100){
+
+progress+=16;
+
+}
+
+
+document.getElementById("bar").style.width=
+progress+"%";
+
+
+document.getElementById("bar").innerHTML=
+progress+"%";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
