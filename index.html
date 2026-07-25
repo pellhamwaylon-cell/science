@@ -1,369 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middlanders Science Hub | 7th & 8th Grade Encyclopedia</title>
+    <style>
+        :root {
+            --bg: #0d1117; --panel: #161b22; --panel-light: #21262d; --border: #30363d;
+            --accent: #58a6ff; --accent-hover: #3182ce;
+            --success: #2ea043; --danger: #da3633; --warn: #d29922; --text: #c9d1d9;
+            --font-code: 'Consolas', 'Courier New', monospace;
+        }
+        * { box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { margin: 0; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        header { background: var(--panel); border-bottom: 1px solid var(--border); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
+        header h1 { margin: 0; color: var(--accent); font-size: 22px; display: flex; align-items: center; gap: 10px; }
 
-<title>Science Study Hub</title>
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; width: 100%; flex: 1; }
 
+        .search-bar { width: 100%; padding: 14px 20px; background: #010409; border: 1px solid var(--border); color: #fff; border-radius: 8px; font-size: 15px; outline: none; margin-bottom: 25px; transition: 0.2s; }
+        .search-bar:focus { border-color: var(--accent); box-shadow: 0 0 10px rgba(88, 166, 255, 0.3); }
 
-<style>
+        .grade-toggle { display: flex; gap: 10px; margin-bottom: 25px; }
+        .tab-btn { padding: 10px 20px; background: var(--panel-light); border: 1px solid var(--border); color: var(--text); border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        .tab-btn.active { background: var(--accent); color: #000; border-color: var(--accent); }
 
-body {
-font-family:Arial,sans-serif;
-background:#e3f2fd;
-padding:20px;
-margin:0;
-}
-
-
-.container {
-max-width:1200px;
-margin:auto;
-}
-
-
-header {
-
-background:#1565c0;
-color:white;
-padding:40px;
-border-radius:25px;
-text-align:center;
-
-}
-
-
-.grid {
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:30px;
-
-}
-
-
-.card {
-
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 5px 15px #bbb;
-
-}
-
-
-h2 {
-
-color:#1565c0;
-
-}
-
-
-button {
-
-background:#1565c0;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:10px;
-cursor:pointer;
-
-}
-
-
-button:hover {
-
-background:#0d47a1;
-
-}
-
-
-</style>
-
-
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: 0.2s; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        .card h3 { margin: 0 0 10px 0; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: space-between; }
+        .card p { font-size: 13px; color: #8b949e; line-height: 1.5; margin: 0 0 15px 0; }
+        .card .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 10px; font-weight: bold; background: var(--panel-light); color: var(--accent); border: 1px solid var(--border); }
+    </style>
 </head>
-
-
-
 <body>
 
-
-<div class="container">
-
-
-<header>
-
-<h1>
-🔬 Science Study Hub
-</h1>
-
-<p>
-Complete 7th + 8th Grade Science Curriculum
-</p>
-
-</header>
-
-
-
-
-<div class="grid">
-
-
-
-<h2>
-📚 7th Grade Science
-</h2>
-
-
-<div class="card">
-
-<h2>Scientific Inquiry</h2>
-
-<a href="science_study_file_1_scientific_inquiry.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Lab Design</h2>
-
-<a href="science_study_file_2_lab_design.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Matter & Atoms</h2>
-
-<a href="science_study_file_3_matter_and_atoms.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Energy & Forces</h2>
-
-<a href="science_study_file_4_energy_and_forces.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Cells & Life</h2>
-
-<a href="science_study_file_5_cells_and_life.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Ecosystems</h2>
-
-<a href="science_study_file_6_ecosystems.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Environmental Science</h2>
-
-<a href="science_study_file_7_environmental_science.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-
-
-
-
-<h2>
-🎓 8th Grade Science
-</h2>
-
-
-
-<div class="card">
-
-<h2>8th Grade Dashboard</h2>
-
-<a href="science_study_file_17_8th_grade_dashboard.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Chemistry</h2>
-
-<a href="science_study_file_18_chemistry.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Physics</h2>
-
-<a href="science_study_file_19_physics.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Genetics</h2>
-
-<a href="science_study_file_20_genetics.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Space Science</h2>
-
-<a href="science_study_file_21_space_science.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Earth Systems</h2>
-
-<a href="science_study_file_22_earth_systems.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Advanced Labs</h2>
-
-<a href="science_study_file_23_advanced_labs.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Final Review</h2>
-
-<a href="science_study_file_24_final_review_cheat_sheet.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Quiz Database</h2>
-
-<a href="science_study_file_25_quiz_database.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-
-
-<h2>
-🛠 Study Tools
-</h2>
-
-
-
-<div class="card">
-
-<h2>Flashcards</h2>
-
-<a href="science_study_file_9_flashcards.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>Virtual Labs</h2>
-
-<a href="science_study_file_10_virtual_lab.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>AI Tutor</h2>
-
-<a href="science_study_file_15_ai_tutor.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-<div class="card">
-
-<h2>App Launcher</h2>
-
-<a href="science_study_file_16_app_launcher.html">
-<button>Open</button>
-</a>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
+    <header>
+        <h1>🧪 Middlanders Science Study & Encyclopedia Hub</h1>
+        <a href="science_study_file_11_science_encyclopedia.html" style="text-decoration:none; padding:8px 16px; background:var(--accent); color:#000; font-weight:bold; border-radius:6px; font-size:13px;">📖 Open Encyclopedia</a>
+    </header>
+
+    <div class="container">
+        <input type="text" class="search-bar" id="search" placeholder="🔍 Search topics, variables, cells, genetics, or physics..." oninput="filterCards()">
+
+        <div class="grade-toggle">
+            <button class="tab-btn active" id="tab-all" onclick="setFilter('all')">All Modules</button>
+            <button class="tab-btn" id="tab-7th" onclick="setFilter('7th')">7th Grade Core</button>
+            <button class="tab-btn" id="tab-8th" onclick="setFilter('8th')">8th Grade Expansion</button>
+            <button class="tab-btn" id="tab-tools" onclick="setFilter('tools')">Interactive Tools</button>
+        </div>
+
+        <div class="grid" id="module-grid">
+            <!-- 7th Grade Core -->
+            <a href="science_study_file_1_scientific_inquiry.html" class="card" data-grade="7th">
+                <div>
+                    <h3>1. Scientific Inquiry <span class="badge">7th Grade</span></h3>
+                    <p>Master MV (Independent), RV (Dependent), and CV (Controlled) variables for lab testing.</p>
+                </div>
+            </a>
+            <a href="science_study_file_3_matter_and_atoms.html" class="card" data-grade="7th">
+                <div>
+                    <h3>3. Matter & Atoms <span class="badge">7th Grade</span></h3>
+                    <p>Explore atomic structure, protons, neutrons, electrons, and periodic trends.</p>
+                </div>
+            </a>
+            <a href="science_study_file_5_cells_and_life.html" class="card" data-grade="7th">
+                <div>
+                    <h3>5. Cells & Organisms <span class="badge">7th Grade</span></h3>
+                    <p>Study organelle structures, photosynthesis, cellular respiration, and fungi.</p>
+                </div>
+            </a>
+            <a href="science_study_file_6_ecosystems.html" class="card" data-grade="7th">
+                <div>
+                    <h3>6. Ecosystems & Food Webs <span class="badge">7th Grade</span></h3>
+                    <p>Examine food chains, energy pyramids, and ecological resource competition.</p>
+                </div>
+            </a>
+
+            <!-- Tools -->
+            <a href="science_study_file_9_flashcards.html" class="card" data-grade="tools">
+                <div>
+                    <h3>9. Flashcard Studio <span class="badge">Interactive Tool</span></h3>
+                    <p>Build vocabulary decks cached directly in browser IndexedDB storage.</p>
+                </div>
+            </a>
+            <a href="science_study_file_11_science_encyclopedia.html" class="card" data-grade="tools">
+                <div>
+                    <h3>11. Science Encyclopedia <span class="badge">Interactive Hub</span></h3>
+                    <p>Searchable visual encyclopedia with diagrams, definitions, and core concepts.</p>
+                </div>
+            </a>
+
+            <!-- 8th Grade Expansion -->
+            <a href="science_study_file_18_chemistry.html" class="card" data-grade="8th">
+                <div>
+                    <h3>18. Advanced Chemistry <span class="badge">8th Grade</span></h3>
+                    <p>Chemical reactions, molecular bonding, and conservation of mass.</p>
+                </div>
+            </a>
+            <a href="science_study_file_19_physics.html" class="card" data-grade="8th">
+                <div>
+                    <h3>19. Physics & Motion <span class="badge">8th Grade</span></h3>
+                    <p>Newton's Laws of Motion, kinetic energy, momentum, and wave mechanics.</p>
+                </div>
+            </a>
+            <a href="science_study_file_20_genetics.html" class="card" data-grade="8th">
+                <div>
+                    <h3>20. Genetics & Heredity <span class="badge">8th Grade</span></h3>
+                    <p>DNA double helix structure, Punnett squares, and evolutionary traits.</p>
+                </div>
+            </a>
+            <a href="science_study_file_24_final_review_cheat_sheet.html" class="card" data-grade="8th">
+                <div>
+                    <h3>24. WCAS State Test Prep <span class="badge">8th Grade</span></h3>
+                    <p>Comprehensive 6th–8th grade master review sheet for Washington state science testing.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let currentFilter = 'all';
+
+        function setFilter(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`tab-${filter}`).classList.add('active');
+            filterCards();
+        }
+
+        function filterCards() {
+            const query = document.getElementById('search').value.toLowerCase();
+            document.querySelectorAll('.card').forEach(card => {
+                const text = card.innerText.toLowerCase();
+                const grade = card.getAttribute('data-grade');
+                const matchesSearch = text.includes(query);
+                const matchesGrade = (currentFilter === 'all') || (grade === currentFilter);
+                card.style.display = (matchesSearch && matchesGrade) ? 'flex' : 'none';
+            });
+        }
+    </script>
 </body>
-
 </html>
